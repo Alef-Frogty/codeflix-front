@@ -1,29 +1,27 @@
 const plans = () => {
-    return (
-        <>
-       <main className="flex flex-col content-center items-center  justify-center ">
-         
- 
-      <header className="relative flex items-center py-6 ">
-        <h1 className="text-5xl font-extrabold text-red-600 tracking-tight pr-250">
-          NETFLIX
-        </h1>
-        <div className="flex gap-4">
-          <button className="font-medium text-sm">
-            Sair
-          </button>
-        </div>
-      </header>
-          <div className=" border-4 border-indigo-500">
-             <p className="text-sm font-small">Passo <strong>3</strong> de <strong>4</strong></p>
-            <p className="text-4xl font-bold">Escolha o melhor plano para você</p>
-            <div className="flex
-            ">
-            <div>
-                <div>
-                    <h2>Padrão com anúncios</h2>
-                    <p>1080p</p>
-                </div>
+  return (
+    <>
+      <main className="flex flex-col content-center items-center  justify-center ">
+        <header className="relative flex items-center py-6 ">
+          <h1 className="text-5xl font-extrabold text-red-600 tracking-tight pr-250">
+            NETFLIX
+          </h1>
+          <div className="flex gap-4">
+            <button className="font-medium text-sm">Sair</button>
+          </div>
+        </header>
+        <div className="w-250">
+          <p className="text-sm font-small">
+            Passo <strong>3</strong> de <strong>4</strong>
+          </p>
+          <p className="text-4xl font-bold">Escolha o melhor plano para você</p>
+          <div className="flex gap-8 mt-6 mb-8">
+            <div className="h-190 px-6 py-6 border-2 border-black rounded-lg gap-4 flex flex-col">
+              <div className=" pb-1 border-4 border-indigo-500">
+                <h2>Padrão com anúncios</h2>
+                <p>1080p</p>
+              </div>
+              <div className="flex flex-col gap-4">
                 <p>Preço Mensal</p>
                 <p>R$ 20,90</p>
                 <p>Qualidade de video e áudio</p>
@@ -38,12 +36,14 @@ const plans = () => {
                 <p>2</p>
                 <p>Anúncios</p>
                 <p>Menos do que você pensa</p>
+              </div>
             </div>
-             <div>
-                <div>
-                    <h2>Padrão</h2>
-                    <p>1080p</p>
-                </div>
+            <div className="h-190 px-6 py-6 border-2 border-black rounded-lg gap-4 flex flex-col">
+              <div className="border-4 border-indigo-500">
+                <h2>Padrão</h2>
+                <p>1080p</p>
+              </div>
+              <div className="flex flex-col p gap-4">
                 <p>Preço Mensal</p>
                 <p>R$ 44,90</p>
                 <p>Qualidade de video e áudio</p>
@@ -58,12 +58,14 @@ const plans = () => {
                 <p>2</p>
                 <p>Anúncios</p>
                 <p>Sem anúncios</p>
+              </div>
             </div>
-             <div>
-                <div>
-                    <h2>Premium</h2>
-                    <p>4K + HDR</p>
-                </div>
+            <div className="h-190 px-6 py-6 border-2 border-black rounded-lg gap-3 flex flex-col">
+              <div className="border-4 border-indigo-500">
+                <h2>Premium</h2>
+                <p>4K + HDR</p>
+              </div>
+              <div className="flex flex-col p gap-4">
                 <p>Preço Mensal</p>
                 <p>R$ 59,90</p>
                 <p>Qualidade de video e áudio</p>
@@ -80,23 +82,34 @@ const plans = () => {
                 <p>6</p>
                 <p>Anúncios</p>
                 <p>Sem anúncios</p>
+              </div>
             </div>
           </div>
           <p>
-           <a href="#"> Saiba mais sobre o plano com anúncios.</a> Ao selecionar um plano com anúncios, você precisará informar sua data de nascimento para a personalização de anúncios e outras finalidades consistentes com a <a href="#"> Declaração de Privacidade </a> da Netflix.
-
-A disponibilidade das opções Full HD (1080p), Ultra HD (4K) e HDR está sujeita ao serviço de internet e à funcionalidade do aparelho. Nem todo conteúdo está disponível em todas as resoluções. Consulte os <a href="#">Termos de Uso</a> para mais detalhes.
-
-Somente as pessoas que moram com você podem usar sua conta. Adicione 1 assinante extra com o plano Padrão ou até 2 com o plano Premium. <a href="#">Saiba mais</a>. Assista em 4 aparelhos ao mesmo tempo com o plano Premium e em 2 aparelhos com o plano Padrão ou Padrão com anúncios.
-
-Os eventos ao vivo fazem parte de todos os planos da Netflix e contêm anúncios.
+            <a href="#"> Saiba mais sobre o plano com anúncios.</a> Ao
+            selecionar um plano com anúncios, você precisará informar sua data
+            de nascimento para a personalização de anúncios e outras finalidades
+            consistentes com a <a href="#"> Declaração de Privacidade </a> da
+            Netflix. A disponibilidade das opções Full HD (1080p), Ultra HD (4K)
+            e HDR está sujeita ao serviço de internet e à funcionalidade do
+            aparelho. Nem todo conteúdo está disponível em todas as resoluções.
+            Consulte os <a href="#">Termos de Uso</a> para mais detalhes.
+            Somente as pessoas que moram com você podem usar sua conta. Adicione
+            1 assinante extra com o plano Padrão ou até 2 com o plano Premium.{" "}
+            <a href="#">Saiba mais</a>. Assista em 4 aparelhos ao mesmo tempo
+            com o plano Premium e em 2 aparelhos com o plano Padrão ou Padrão
+            com anúncios. Os eventos ao vivo fazem parte de todos os planos da
+            Netflix e contêm anúncios.
           </p>
-        <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-2 rounded text-3xl"><a href="../Register/Assinatura/payment">Proximo</a></button>
+          <div className="text-center">
+          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold w-120 px-6 py-2 rounded text-3xl justify-center ">
+            <a href="../Assinatura/plans/payment">Proximo</a>
+          </button>
           </div>
-          
-        </main>
-        </>
-    )
-}
+        </div>
+      </main>
+    </>
+  );
+};
 
 export default plans;
