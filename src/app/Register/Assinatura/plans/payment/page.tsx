@@ -37,11 +37,14 @@ const payment = () => {
                 </p>
             </div>
             </a>
-            <div className="shadow-xl/20 h-15  border-2 border-gray-300 rounded-lg hover:bg-gray-200 cursor-pointer">
+           <a href="./payment/methodprecard">
+         <div className="shadow-xl/20 h-15  border-2 border-gray-300 rounded-lg hover:bg-gray-200 cursor-pointer">
+        
             <p className="font-bold text-lg pt-2 pl-4">
                 Código do cartão pré-pago
             </p>
             </div>
+            </a>
          </div>
         </div>
       </main>

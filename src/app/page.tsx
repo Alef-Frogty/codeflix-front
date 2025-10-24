@@ -15,9 +15,11 @@ export default function Home()
           NETFLIX
         </h1>
         <div className="flex gap-4">
+          <a href="./login">
           <button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded">
             Entrar
           </button>
+          </a>
         </div>
       </header>
 
